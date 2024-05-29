@@ -24,7 +24,7 @@ export class Server {
     async start(){
 
         //* Middlewares
-        this.app.use( express.json() ) // Cualquier request que llegue se va a transformar en un objeto json o va a permitir body de tipo: raw (JSON)
+        this.app.use( express.json() ) // Cualquier request que llegue se va a transformar en un objeto json o va a permitir body de tipo: raw ( JSON )
         this.app.use( express.urlencoded({ extended: true }) ) // Tambien queremos que algunos endpoints puedan tener en su body data de tipo: x-www-form-urlencoded | form-data  
 
         //* Public Folder
